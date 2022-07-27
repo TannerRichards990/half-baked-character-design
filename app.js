@@ -80,9 +80,20 @@ function displayStats() {
 
 function displayCatchphrases() {
     // clear out the DOM for the currently displayed catchphrases
-
+    catchphrasesEl.textContent = '';
     // loop through each catchphrase in state
-    
+    for (let catchphrase of catchphrases) {
+        const pTag = document.createElement('p');
+
+        pTag.classList.add('catchphrase');
+        pTag.textContent = catchphrase;
+
+        catchphrasesEl.append(pTag);
+
+
+
+
+    }
     // and for each catchphrase
     
     // create an HTML element with the catchphrase as its text content
