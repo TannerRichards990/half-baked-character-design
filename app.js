@@ -29,17 +29,22 @@ headDropdown.addEventListener('change', () => {
     headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
     console.log(headEl.style.backgroundImage);
     // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
 });
 
 
 middleDropdown.addEventListener('change', () => {
     // get the value of the middle dropdown
+    const middleType = middleDropdown.value;
 
     // increment the middle change count state
-    
+    middleCount++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
-
+    middleEl.style.backgroundImage = `url("./assets/${middleType}-middle.png")`;
+    console.log(middleEl.style.backgroundImage);
     // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
+    console.log(displayStats);
 });
 
 
