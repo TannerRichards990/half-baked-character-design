@@ -44,7 +44,7 @@ middleDropdown.addEventListener('change', () => {
     console.log(middleEl.style.backgroundImage);
     // update the stats to show the new count (call displayStats() to do this work)
     displayStats();
-    console.log(displayStats);
+    
 });
 
 
@@ -55,9 +55,9 @@ bottomDropdown.addEventListener('change', () => {
     bottomCount++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
     bottomEl.style.backgroundImage = `url("./assets/${bottomType}-pants.png")`;
-    console.log(bottomEl.style.backgroundImage);
+    
     // update the stats to show the new count (call displayStats() to do this work)
-    console.log(displayStats);
+    (displayStats);
 });
 
 catchphraseButton.addEventListener('click', () => {
