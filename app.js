@@ -57,7 +57,7 @@ bottomDropdown.addEventListener('change', () => {
     bottomEl.style.backgroundImage = `url("./assets/${bottomType}-pants.png")`;
     
     // update the stats to show the new count (call displayStats() to do this work)
-    (displayStats);
+    displayStats();
 });
 
 catchphraseButton.addEventListener('click', () => {
